@@ -1,22 +1,33 @@
 #include "main.h"
 
 /**
- * print_chessboard - prints buffer in hexa
- * @a: cheese
- * needle: buffer2
+ * print_diagonal -  checks for checks for a digit (0 through 9).
+ * @n: n -  Variable
  *
- * Return: Nothing.
+ * Return: Always 0.
  */
-void print_chessboard(char (*a)[8])
+void print_diagonal(int n)
 {
-	int i, j;
+	int x, y;
 
-	for (i = 0; i < 8; i++)
+	if (n > 0)
 	{
-		for (j = 0; j < 8; j++)
+		for (x = 1; x <= n; x++)
 		{
-			_putchar (a[i][j]);
+			for (y = 1; y <= n; y++)
+			{
+				if (x == y)
+				{
+					_putchar(92);
+					break;
+				}
+				_putchar(' ');
+			}
+			_putchar('\n');
 		}
-	_putchar('\n');
-		}
+	}
+	else
+	{
+		_putchar('\n');
+	}
 }
