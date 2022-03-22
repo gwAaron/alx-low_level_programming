@@ -7,16 +7,7 @@
  */
 void print_rev(char *s)
 {
-	int i = 0;
-
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	i--;
-	for (; i >= 0; i--)
-	{
-		print_rev(s[i]);
-	}
-	print_rev('\n');
+    string a = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+    reverse(a);
+    return 0;
 }
