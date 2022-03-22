@@ -6,7 +6,7 @@
  *Return: Always 0 (Success)
  */
 
-void swap(int& a, int& b)
+void swap(int &a, int &b)
 {
 	a ^= b; 
 	b ^= a;
