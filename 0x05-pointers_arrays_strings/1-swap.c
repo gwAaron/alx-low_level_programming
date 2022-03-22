@@ -3,14 +3,13 @@
 /**
  * swap_int - swaps the values of two integers.
  *
- *Return: Always 0 (Success).
+ *Return: Always 0 (Success)
  */
 
-int main()
+void swap(int& a, int& b)
 {
-    a = 98;
-    b = 42;
-    std::cout << "first " << first << " second " << second << "\n";
-    swap_ints();
-    std::cout << "first " << first << " second " << second << "\n";
+	a ^= b; 
+	b ^= a;
+	a ^= b;
+	return (0);
 }
