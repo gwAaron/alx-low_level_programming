@@ -8,14 +8,9 @@
 
 int main()
 {
-	int a=98, b=42;
-
-	printf("Before swap a = %d\n b = %d\n", a, b);
-
-	a = 98 + 20;
-	b = a - b;
-	a = a - b;
-
-	printf("After swap a = %d\n b = %d", a, b);
-	return (0);
+    a = 98;
+    b = 42;
+    std::cout << "first " << first << " second " << second << "\n";
+    swap_ints();
+    std::cout << "first " << first << " second " << second << "\n";
 }
