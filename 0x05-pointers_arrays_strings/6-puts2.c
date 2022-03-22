@@ -1,5 +1,4 @@
-
-#include "holberton.h"
+#include "main.h"
 
 /**
  * puts2 - print reverse characters.
