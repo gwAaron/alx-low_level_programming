@@ -19,7 +19,7 @@ void puts_half(char *str)
 		n = (i + 1) / 2;
 		while (str[n] != '\0')
 		{
-		putchar(str[n]);
+		printf(str[n]);
 		n++;
 		}
 	}
@@ -28,9 +28,9 @@ void puts_half(char *str)
 		n = (i / 2);
 		while (str[n] != '\0')
 		{
-			putchar(str[n]);
+			printf(str[n]);
 			n++;
 		}
 	}
-	putchar('\n');
+	printf('\n');
 }
