@@ -7,7 +7,7 @@
  *Return: void.
  */
 
-void _puts(const char *str)
+void _puts(char *str)
 {
 	int i;
 
