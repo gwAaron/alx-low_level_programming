@@ -11,5 +11,5 @@ void swap(int a, int b)
 	a ^= b; 
 	b ^= a;
 	a ^= b;
-	return (0);
+	return ();
 }
