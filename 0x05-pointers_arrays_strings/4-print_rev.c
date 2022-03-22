@@ -5,9 +5,10 @@
  * @s: validate the character
  * Return: Always 0.
  */
-void print_rev(char *s)
+
+int main()
 {
-    string a = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+    string a = "lobby";
     reverse(a);
     return 0;
 }
