@@ -1,17 +1,27 @@
 #include "main.h"
 
 /**
- * main - function encodes a string using rot13.
+ * rot13 - Function that reverses the content of an array of integers.
+ *
+ * @str: s is the array
  *
  * Return: Always 0.
  */
-
-void rot13(char *text)
+char *rot13(char *str)
 {
-	for(;*text;text++)
-    {
-	    if(*text>'A'&&*text<'N'||*text>'a'&&*text<'n')*text+=13;
-	else if(*text>'M'&&*text<'Z'||*text>'m'&&*text<'z')*text-=13;
-    }
-	return (0);
+	int i = 0, k;
+	char s[] =  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char s1[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+	for (; str[i] != '\0'; i++)
+	{
+		for (k = 0; k <= 51; k++)
+		{
+			if (s[k] == str[i])
+			{
+				str[i] = s1[k];
+			}
+		}
+	}
+	return (str);
 }
