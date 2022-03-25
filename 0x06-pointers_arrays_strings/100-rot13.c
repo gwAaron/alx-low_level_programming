@@ -3,6 +3,8 @@
 /**
  * rot13 - encodes a string.
  *
+ * @str: s is the array
+ *
  * Return: Always 0.
  */
 
