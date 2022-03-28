@@ -7,13 +7,19 @@
  * @n: size
  * Return: Nothing.
  */
-char *_memset(char *s, char b, unsigned int n)
+void printArray(int arr[], int n)
 {
-	unsigned int i;
+	for (int i=0; i<n; i++)
+		printf("%d ", arr[i]);
+}
 
-	for (i = 0; i < n; i++)
-	{
-		*(s + i) = b;
-	}
-	return (s);
+int main()
+{
+	int n = 10;
+	int arr[n];
+	memset(arr, 0, n*sizeof(arr[0]));
+	printf("Array after memset()\n");
+	printArray(arr, n);
+
+	return 0;
 }
