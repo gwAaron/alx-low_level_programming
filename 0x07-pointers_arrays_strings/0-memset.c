@@ -5,25 +5,15 @@
  * @s: buffer
  * @b: write
  * @n: size
- *
  * Return: Nothing.
  */
+char *_memset(char *s, char b, unsigned int n)
+{
+	unsigned int i;
 
-void printArray(int arr[], int n)
-{
-   for (int i=0; i<n; i++)
-      _putchar("%d ", arr[i]);
-}
-  
-int main()
-{
-    int n = 10;
-    int arr[n];
-  
-    // Fill whole array with 0.
-    memset(arr, 0, n*sizeof(arr[0]));
-    _putchar("Array after memset()\n");
-    printArray(arr, n);
-  
-    return 0;
+	for (i = 0; i < n; i++)
+	{
+		*(s + i) = b;
+	}
+	return (s);
 }
