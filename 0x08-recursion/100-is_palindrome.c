@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 
 int check_palindrome(char *s);
 
@@ -55,4 +55,3 @@ int _strlen_recursion(char *s)
 	s++;
 	return (_strlen_recursion(s) + 1);
 }
-
