@@ -38,6 +38,3 @@ int check_palindrome(char *s)
 
 	return (1);
 }
-
-/**
-
