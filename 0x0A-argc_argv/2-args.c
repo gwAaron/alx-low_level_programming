@@ -8,7 +8,7 @@
   *
   * Return: Always zero
   */
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int i;
 
